@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshCut Rwanda | Barbershop</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 8%;
+      background: #1c1c1c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h2 {
+      color: #e7b85c;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      background: #242424;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      margin-bottom: 10px;
+    }
+
+    .hero span {
+      color: #e7b85c;
+    }
+
+    .hero p {
+      color: #ccc;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #e7b85c;
+      color: #111;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #e7b85c;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      background: #202020;
+      border: 1px solid #383838;
+      border-radius: 10px;
+      padding: 22px;
+      text-align: center;
+    }
+
+    .price {
+      color: #e7b85c;
+      font-weight: bold;
+    }
+
+    #contact {
+      text-align: center;
+      background: #202020;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>FreshCut Rwanda</h2>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Look Sharp. <span>Feel Fresh.</span></h1>
+      <p>Quality cuts. Clean style. Good vibes.</p>
+      <a class="button" href="#services">Explore Services</a>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <article class="service">
+          <h3>Classic Haircut</h3>
+          <p>A clean, fresh look.</p>
+          <p class="price">3,000 RWF</p>
+        </article>
+
+        <article class="service">
+          <h3>Fade Cut</h3>
+          <p>Sharp fades and modern style.</p>
+          <p class="price">4,000 RWF</p>
+        </article>
+
+        <article class="service">
+          <h3>Beard Trim</h3>
+          <p>Keep your beard neat.</p>
+          <p class="price">2,000 RWF</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Visit FreshCut</h2>
+      <p>Opening hours: Monday–Saturday, 8 AM–7 PM</p>
+      <p>Location: Kigali, Rwanda</p>
+      <p>Call us to confirm prices and availability.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 FreshCut Rwanda — Demo Website</p>
+  </footer>
+</body>
+</html>
