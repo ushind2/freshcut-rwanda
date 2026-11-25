@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://freshcut-rwanda.netlify.app/sitemap.xml

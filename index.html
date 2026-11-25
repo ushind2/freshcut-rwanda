@@ -1,162 +1,307 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FreshCut Rwanda | Barbershop</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <title>FreshCut Rwanda | Barbershop in Kigali</title>
+  <meta name="description" content="FreshCut Rwanda is a barbershop in Kigali for classic haircuts, sharp fades and beard trims. Open Monday to Saturday, 8 AM to 7 PM. Request an appointment online.">
+  <meta name="theme-color" content="#141311">
+  <link rel="canonical" href="https://freshcut-rwanda.netlify.app/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
-      line-height: 1.6;
-    }
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FreshCut Rwanda">
+  <meta property="og:title" content="FreshCut Rwanda | Barbershop in Kigali">
+  <meta property="og:description" content="Classic cuts, sharp fades and neat beards in Kigali. Request your chair online.">
+  <meta property="og:url" content="https://freshcut-rwanda.netlify.app/">
+  <meta property="og:locale" content="en_RW">
+  <meta name="twitter:card" content="summary">
 
-    header {
-      padding: 24px 8%;
-      background: #1c1c1c;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/main.js" defer></script>
 
-    header h2 {
-      color: #e7b85c;
-      margin: 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 16px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 90px 20px;
-      background: #242424;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.2rem, 6vw, 4rem);
-      margin-bottom: 10px;
-    }
-
-    .hero span {
-      color: #e7b85c;
-    }
-
-    .hero p {
-      color: #ccc;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #e7b85c;
-      color: #111;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 50px 8%;
-    }
-
-    section h2 {
-      text-align: center;
-      color: #e7b85c;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-      gap: 20px;
-    }
-
-    .service {
-      background: #202020;
-      border: 1px solid #383838;
-      border-radius: 10px;
-      padding: 22px;
-      text-align: center;
-    }
-
-    .price {
-      color: #e7b85c;
-      font-weight: bold;
-    }
-
-    #contact {
-      text-align: center;
-      background: #202020;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #aaa;
-    }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "FreshCut Rwanda",
+    "url": "https://freshcut-rwanda.netlify.app/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kigali",
+      "addressCountry": "RW"
+    },
+    "priceRange": "2,000–4,000 RWF",
+    "currenciesAccepted": "RWF",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "19:00"
+    }],
+    "makesOffer": [
+      { "@type": "Offer", "name": "Classic Haircut", "price": "3000", "priceCurrency": "RWF" },
+      { "@type": "Offer", "name": "Fade Cut", "price": "4000", "priceCurrency": "RWF" },
+      { "@type": "Offer", "name": "Beard Trim", "price": "2000", "priceCurrency": "RWF" }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <h2>FreshCut Rwanda</h2>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="/" aria-label="FreshCut Rwanda, home">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="9" cy="23" r="5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+          <circle cx="23" cy="23" r="5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+          <path d="M12.5 19.5 25 3M19.5 19.5 7 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span class="brand__name">FreshCut<span class="brand__sub">Rwanda</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main" data-nav>
+        <a href="#prices">Prices</a>
+        <a href="#how">How it works</a>
+        <a href="#visit">Visit</a>
+        <a class="btn btn--small" href="#book">Book a chair</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Look Sharp. <span>Feel Fresh.</span></h1>
-      <p>Quality cuts. Clean style. Good vibes.</p>
-      <a class="button" href="#services">Explore Services</a>
-    </section>
-
-    <section id="services">
-      <h2>Our Services</h2>
-      <div class="services">
-        <article class="service">
-          <h3>Classic Haircut</h3>
-          <p>A clean, fresh look.</p>
-          <p class="price">3,000 RWF</p>
-        </article>
-
-        <article class="service">
-          <h3>Fade Cut</h3>
-          <p>Sharp fades and modern style.</p>
-          <p class="price">4,000 RWF</p>
-        </article>
-
-        <article class="service">
-          <h3>Beard Trim</h3>
-          <p>Keep your beard neat.</p>
-          <p class="price">2,000 RWF</p>
-        </article>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="eyebrow reveal">Barbershop &middot; Kigali, Rwanda</p>
+        <h1 class="hero__title reveal" id="hero-title">
+          <span class="hero__line">Look sharp.</span>
+          <span class="hero__line hero__line--accent"><em>Feel</em> fresh.</span>
+        </h1>
+        <p class="hero__lede reveal">Quality cuts, clean style and good vibes. Pick your service, choose a time, and we'll call to confirm your chair.</p>
+        <div class="hero__actions reveal">
+          <a class="btn" href="#book">Book a chair</a>
+          <a class="btn btn--ghost" href="#prices">See prices</a>
+        </div>
       </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <div class="pole">
+          <span class="pole__cap pole__cap--top"></span>
+          <span class="pole__glass"><span class="pole__stripes"></span></span>
+          <span class="pole__cap pole__cap--bottom"></span>
+        </div>
+        <p class="hero__stamp">Est. Kigali</p>
+      </div>
+
+      <aside class="status-card reveal" aria-live="polite">
+        <span class="status-card__dot" data-status-dot></span>
+        <div>
+          <p class="status-card__label" data-status-label>Mon–Sat &middot; 8 AM–7 PM</p>
+          <p class="status-card__detail" data-status-detail>Closed Sundays</p>
+        </div>
+      </aside>
     </section>
 
-    <section id="contact">
-      <h2>Visit FreshCut</h2>
-      <p>Opening hours: Monday–Saturday, 8 AM–7 PM</p>
-      <p>Location: Kigali, Rwanda</p>
-      <p>Call us to confirm prices and availability.</p>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Classic cuts</span><span>Sharp fades</span><span>Beard trims</span><span>Kigali</span>
+        <span>Classic cuts</span><span>Sharp fades</span><span>Beard trims</span><span>Kigali</span>
+      </div>
+    </div>
+
+    <section class="section prices" id="prices" aria-labelledby="prices-title">
+      <header class="section__head">
+        <p class="eyebrow">The menu</p>
+        <h2 class="section__title" id="prices-title">Our services</h2>
+        <p class="section__note">Prices in Rwandan francs. We confirm the final price when we call you back.</p>
+      </header>
+
+      <ol class="menu">
+        <li class="menu__item">
+          <span class="menu__num">01</span>
+          <div class="menu__body">
+            <h3 class="menu__name">Classic Haircut</h3>
+            <p class="menu__desc">A clean, fresh look, finished with a tidy neckline.</p>
+          </div>
+          <span class="menu__leader" aria-hidden="true"></span>
+          <p class="menu__price"><data value="3000">3,000</data> <abbr title="Rwandan francs">RWF</abbr></p>
+        </li>
+        <li class="menu__item">
+          <span class="menu__num">02</span>
+          <div class="menu__body">
+            <h3 class="menu__name">Fade Cut</h3>
+            <p class="menu__desc">Sharp fades and modern style, blended the way you like it.</p>
+          </div>
+          <span class="menu__leader" aria-hidden="true"></span>
+          <p class="menu__price"><data value="4000">4,000</data> <abbr title="Rwandan francs">RWF</abbr></p>
+        </li>
+        <li class="menu__item">
+          <span class="menu__num">03</span>
+          <div class="menu__body">
+            <h3 class="menu__name">Beard Trim</h3>
+            <p class="menu__desc">Shape, line-up and trim to keep your beard neat.</p>
+          </div>
+          <span class="menu__leader" aria-hidden="true"></span>
+          <p class="menu__price"><data value="2000">2,000</data> <abbr title="Rwandan francs">RWF</abbr></p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section how" id="how" aria-labelledby="how-title">
+      <header class="section__head">
+        <p class="eyebrow">No waiting around</p>
+        <h2 class="section__title" id="how-title">How booking works</h2>
+      </header>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num" aria-hidden="true">1</span>
+          <h3 class="step__title">Send a request</h3>
+          <p>Choose your service and a time that suits you using the form below.</p>
+        </li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">2</span>
+          <h3 class="step__title">We call to confirm</h3>
+          <p>We ring the number you give us to confirm the time and price.</p>
+        </li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">3</span>
+          <h3 class="step__title">Take your seat</h3>
+          <p>Come in at your time, sit back, and walk out fresh.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section visit" id="visit" aria-labelledby="visit-title">
+      <div class="visit__intro">
+        <p class="eyebrow">Come through</p>
+        <h2 class="section__title" id="visit-title">Visit FreshCut</h2>
+        <p class="visit__place">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></svg>
+          Kigali, Rwanda
+        </p>
+        <p>Walk-ins are welcome when a chair is free. Booking ahead means you won't wait.</p>
+      </div>
+
+      <table class="hours" aria-label="Opening hours">
+        <tbody>
+          <tr data-day="1"><th scope="row">Monday</th><td>8 AM – 7 PM</td></tr>
+          <tr data-day="2"><th scope="row">Tuesday</th><td>8 AM – 7 PM</td></tr>
+          <tr data-day="3"><th scope="row">Wednesday</th><td>8 AM – 7 PM</td></tr>
+          <tr data-day="4"><th scope="row">Thursday</th><td>8 AM – 7 PM</td></tr>
+          <tr data-day="5"><th scope="row">Friday</th><td>8 AM – 7 PM</td></tr>
+          <tr data-day="6"><th scope="row">Saturday</th><td>8 AM – 7 PM</td></tr>
+          <tr data-day="0" class="hours__closed"><th scope="row">Sunday</th><td>Closed</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section book" id="book" aria-labelledby="book-title">
+      <header class="section__head">
+        <p class="eyebrow">Reserve your chair</p>
+        <h2 class="section__title" id="book-title">Request an appointment</h2>
+        <p class="section__note">This is a request, not a confirmed booking. We'll call you to lock it in.</p>
+      </header>
+
+      <form class="booking" name="booking" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field" data-booking-form>
+        <input type="hidden" name="subject" value="New booking request from %{siteName}">
+        <p class="visually-hidden" aria-hidden="true">
+          <label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+        </p>
+
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="f-name-error">
+          <p class="field__error" id="f-name-error" data-error-for="name"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-phone">Phone number</label>
+          <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="078 123 4567" required maxlength="20" aria-describedby="f-phone-hint f-phone-error">
+          <p class="field__hint" id="f-phone-hint">We call this number to confirm.</p>
+          <p class="field__error" id="f-phone-error" data-error-for="phone"></p>
+        </div>
+
+        <fieldset class="field field--wide">
+          <legend>Service</legend>
+          <div class="choices">
+            <label class="choice">
+              <input type="radio" name="service" value="Classic Haircut (3,000 RWF)" required>
+              <span class="choice__box"><span class="choice__name">Classic Haircut</span><span class="choice__price">3,000 RWF</span></span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="service" value="Fade Cut (4,000 RWF)">
+              <span class="choice__box"><span class="choice__name">Fade Cut</span><span class="choice__price">4,000 RWF</span></span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="service" value="Beard Trim (2,000 RWF)">
+              <span class="choice__box"><span class="choice__name">Beard Trim</span><span class="choice__price">2,000 RWF</span></span>
+            </label>
+          </div>
+          <p class="field__error" data-error-for="service"></p>
+        </fieldset>
+
+        <div class="field">
+          <label for="f-date">Preferred day</label>
+          <input id="f-date" name="date" type="date" required aria-describedby="f-date-hint f-date-error">
+          <p class="field__hint" id="f-date-hint">Monday to Saturday.</p>
+          <p class="field__error" id="f-date-error" data-error-for="date"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-time">Preferred time</label>
+          <select id="f-time" name="time" required aria-describedby="f-time-error">
+            <option value="">Choose a time</option>
+            <option>8:00 AM</option><option>8:30 AM</option>
+            <option>9:00 AM</option><option>9:30 AM</option>
+            <option>10:00 AM</option><option>10:30 AM</option>
+            <option>11:00 AM</option><option>11:30 AM</option>
+            <option>12:00 PM</option><option>12:30 PM</option>
+            <option>1:00 PM</option><option>1:30 PM</option>
+            <option>2:00 PM</option><option>2:30 PM</option>
+            <option>3:00 PM</option><option>3:30 PM</option>
+            <option>4:00 PM</option><option>4:30 PM</option>
+            <option>5:00 PM</option><option>5:30 PM</option>
+            <option>6:00 PM</option><option>6:30 PM</option>
+          </select>
+          <p class="field__error" id="f-time-error" data-error-for="time"></p>
+        </div>
+
+        <div class="field field--wide">
+          <label for="f-notes">Anything we should know? <span class="field__optional">(optional)</span></label>
+          <textarea id="f-notes" name="notes" rows="3" maxlength="500" placeholder="e.g. skin fade, keep the top long"></textarea>
+        </div>
+
+        <div class="booking__footer field--wide">
+          <button class="btn btn--block" type="submit" data-submit>
+            <span data-submit-label>Send request</span>
+          </button>
+          <p class="booking__status" role="status" data-form-status></p>
+        </div>
+      </form>
+
+      <div class="booking-done" hidden tabindex="-1" data-booking-done>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="m14 25 7 7 13-15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Request received</h3>
+        <p data-done-summary>We'll call you shortly to confirm your appointment.</p>
+        <button class="btn btn--ghost" type="button" data-book-again>Make another request</button>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 FreshCut Rwanda — Demo Website</p>
+  <footer class="site-footer">
+    <p class="site-footer__brand">FreshCut Rwanda</p>
+    <p>Kigali, Rwanda &middot; Mon–Sat, 8 AM–7 PM</p>
+    <p class="site-footer__copy">&copy; <span data-year>2026</span> FreshCut Rwanda</p>
   </footer>
 </body>
 </html>
